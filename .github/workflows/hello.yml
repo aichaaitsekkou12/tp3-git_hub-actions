@@ -21,3 +21,9 @@ jobs:
           echo "Branche : $GITHUB_REF_NAME"
           echo "Commit : $GITHUB_SHA"
           echo "Événement : $GITHUB_EVENT_NAME"
+
+      - name: Echec volontaire
+        run: exit 1
+
+      - name: Etape ignoree
+        run: echo "Je ne devrais pas s'afficher"
